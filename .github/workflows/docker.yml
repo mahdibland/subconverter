@@ -1,5 +1,6 @@
 name: Publish Docker Image
-on: [push]
+on: 
+  workflow_dispatch:
 
 concurrency: 
   group: ${{ github.ref }}-${{ github.workflow }}
